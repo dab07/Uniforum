@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Add thread</title>
-  <link href="/html_css/css/forms.css" rel="stylesheet" type="/text/css" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../css/style1.css" rel="stylesheet" />
+
   <style>
     #logOut{
       background-color: #4286f4;
@@ -20,28 +26,44 @@
     }
   </style>
 </head>
+
 <body>
-<header id = "top">
-  <h1> Add Thread </h1>
-</header>
-<nav>
-  <a href = "home.html"><button>Main Menu</button></a>
-  <a href="/handler/Threads/showThread.php"><button>Show Thread</button></a>
-  <a href = "/html_css/html/addThread.html"><button>Add Thread</button></a>
-</nav>
-<form method="post" action="/handler/Operations/addThread.php" id = "addForm">
+  <div class=" flex-r container">
+      <div class="flex-r login-wrapper">
+          <div class="login-text">
+              <div class="logo">
+                  <!-- <span><i class="fab fa-speakap"></i></span> -->
+                  <span>Uni-Forum</span>
+              </div>
+              <h1>Add Thread</h1>
+              <!-- <p>It's not long before you embark on this journey! </p> -->
+              <br>
+              <nav>
+                <a href = "home.html"><button>Main Menu</button></a>
+                <a href="/handler/Threads/showThread.php"><button>Show Thread</button></a>
+                <a href = "../html/addThread.html"><button>Add Thread</button></a>
+              </nav>
 
-  <p><label for="topic_title">Topic Title:</label><br/>
-    <input type="text" id="topic_title" name="topic_title" size="40"
-           maxlength="150" required="required" autocomplete="off" autofocus /></p>
+              <form class = "flex-c" id="addForm" action = "/handler/Operations/addThread.php" method="post">
+                  <div class="input-box">
+                      <span class="label">Topic Title</span>
+                      <div class=" flex-r input">
+                          <input type="text" id="topic_title" name="topic_title" placeholder="Any Topic">
+                      </div>
+                  </div>
 
-  <p><label for="post_text">Post Text:</label><br/>
-    <textarea id="post_text" name="post_text" rows="8"
-              cols="40" autocomplete="off" ></textarea></p>
+                  <p><label for="post_text">Post Text:</label><br/>
+                    <textarea id="post_text" name="post_text" rows="8"
+                              cols="100" autocomplete="off" ></textarea></p>
+                  
+                  <input class="btn" type="submit" value="Add To Forum">
 
-  <button id = "addTopic" class = "styledButton" type="submit" name="submit" value="submit">Add to Forum</button>
-</form>
+                  <a href = "/Initial/logout.php"><button id = "logOut">Logout</button></a>
+              </form>
 
-<a href = "/Initial/logout.php"><button id = "logOut">Logout</button></a>
+          </div>
+      </div>
+  </div>
 </body>
+
 </html>
