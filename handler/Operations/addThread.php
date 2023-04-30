@@ -68,7 +68,7 @@ $display_block = "<p>The <strong>".$_POST["topic_title"]."</strong> thread has b
     <h1> New Thread Added </h1>
 </header>
 <nav>
-    <a href = "/home.html"><button>Main Menu</button></a>
+    <a href = "/html_css/html/home.html"><button>Main Menu</button></a>
     <a href="/handler/Threads/showThread.php"><button>Show Threads</button></a>
     <a href = "/html_css/html/addThread.html"><button>Add Threads</button></a>
 </nav>

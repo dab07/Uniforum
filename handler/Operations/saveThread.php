@@ -54,7 +54,7 @@ $display_block = "<p style = 'text-align:center; color:red; font-size: 20px;'>Th
     <h1> March Madness Discussion Topics </h1>
 </header>
 <nav>
-    <a href = "/home.html"><button>Main Menu</button></a>
+    <a href = "/html_css/html/home.html"><button>Main Menu</button></a>
     <a href="/handler/Threads/showThread.php"><button>Show Threads</button></a>
     <a href = "/html_css/html/addThread.html"><button>Add Threads</button></a>
 </nav>

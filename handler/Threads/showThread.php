@@ -25,7 +25,7 @@ $verify_topic_res =  mysqli_query($conn, $verify_topic_sql) or die(mysqli_error(
 if (mysqli_num_rows($verify_topic_res) < 1) {
     //this topic does not exist
     $display_block = "<p><em>You have selected an invalid topic.<br/>
-	Please <a href=\"handler/Threads/threadList.php\">try again</a>.</em></p>";
+	Please <a href=\"/handler/Threads/threadList.php\">try again</a>.</em></p>";
 } else {
     //get the topic title
     while ($topic_info = mysqli_fetch_array($verify_topic_res)) {
@@ -77,7 +77,7 @@ END_OF_TEXT;
 <html>
 <head>
     <title>Posts in Topic</title>
-    <link href="html_css/css/threads.css" rel="stylesheet" type="text/css" />
+    <link href="/html_css/css/threads.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         table {
