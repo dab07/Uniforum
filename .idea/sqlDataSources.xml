@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="48f8cff9-d9b9-4b21-98fc-dfeb0a967e53" name="@UniForum Mapping">
+      <data-sources db="69fe0a38-2bac-4edf-bdd5-c7b4bf85e8b9" ddl="24a20311-6c39-4d9e-8959-0552553b77e6" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="24a20311-6c39-4d9e-8959-0552553b77e6" />
+          <option name="name" value="@UniForum (DDL)" />
+          <option name="dbmsName" value="MYSQL" />
+          <option name="urls">
+            <array />
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

@@ -32,7 +32,7 @@ if(mysqli_num_rows($result) == 1){
 else{
     session_destroy();
     $display_block = "<p style = 'text-align: center; color: red; font-size: 20px;'>Username and/or password are invalid.</p>
-    <p id = 'return' style = 'text-align: center;'><a href = 'login.html' style = 'color: #4286f4; text-decoration: underline;'>Return to login</a></p>";
+    <p id = 'return' style = 'text-align: center;'><a href = '/html_css/html/login.html' style = 'color: #4286f4; text-decoration: underline;'>Return to login</a></p>";
 }
 
 //Close the connection

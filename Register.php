@@ -101,7 +101,7 @@
                     <input type="date" class="form-control" name="DateOfBirth"  placeholder="DoB">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <a href="LoginPage.php" <button type="submit" class="btn btn-primary">Sign in</button></a>
         </form>
     </div>
 </body>
