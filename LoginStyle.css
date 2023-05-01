@@ -24,7 +24,7 @@ body {
     margin-bottom: 10px;
   }
 
-  input[type="text"],
+  input[type="varchar"],
   input[type="password"] {
     padding: 10px;
     font-size: 16px;
